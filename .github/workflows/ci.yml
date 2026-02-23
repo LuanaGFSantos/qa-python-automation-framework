@@ -24,9 +24,9 @@ jobs:
           pip install -r requirements.txt
           pip install pytest-cov
 
-      - name: Executar testes com cobertura (XML e terminal)
+      - name: Executar testes com cobertura (XML  terminal e paralel)
         run: |
-          PYTHONPATH=. pytest -vv \
+          PYTHONPATH=. pytest -vv -n auto --dist loadfile \
             --cov=app \
             --cov-report=xml \
             --cov-report=term-missing \
@@ -34,7 +34,7 @@ jobs:
 
       - name: Gerar relatório HTML de cobertura
         run: |
-          PYTHONPATH=. pytest -q \
+          PYTHONPATH=. pytest -q -n auto --dist loadfile \
             --cov=app \
             --cov-report=html:coverage_html \
             --cov-report=term
