@@ -3,7 +3,7 @@ import pytest
 from app import app
 
 
-@pytest.fixture
+@pytest.mark.e2e
 def client():
     app.config["TESTING"] = True
     with app.test_client() as client:
@@ -13,4 +13,3 @@ def client():
 def test_home_returns_200(client):
     response = client.get("/")
     assert response.status_code == 200
-
