@@ -4,7 +4,7 @@
 
 🧪 QA Python Automation Framework
 
-Projeto de laboratório focado em automação de testes com Python, aplicando boas práticas de arquitetura, organização de código e integração contínua.
+Projeto focado em automação de testes com Python, aplicando boas práticas de arquitetura, organização de código e integração contínua.
 
 Este projeto demonstra como estruturar testes automatizados de forma escalável e integrada a pipelines CI/CD.
 
