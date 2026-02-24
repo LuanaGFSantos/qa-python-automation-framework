@@ -2,7 +2,7 @@
 ![Coverage](https://img.shields.io/badge/coverage-80%25+-brightgreen)
 
 
-🧪 QA Python Automation Lab
+🧪 QA Python Automation Framework
 
 Projeto de laboratório focado em automação de testes com Python, aplicando boas práticas de arquitetura, organização de código e integração contínua.
 
